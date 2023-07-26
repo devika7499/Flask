@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Static image content</title>
+        <script src="{{url_for('static',filename='js/index.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+    <body>
+       <h1> This is the demo page for static content</h1>
+       <div onclick="test()" id="div-content">
+        <h3>Iam from html</h3>
+       </div>
+        <img src="{{ url_for('static',filename='images/images.jpeg')}}"  alt="" />
+    </body>
+</html>
